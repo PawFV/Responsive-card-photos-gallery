@@ -3,13 +3,24 @@
 }
 
 body{
-    font-family: cursive;
+    font-family: 'Noto Sans', sans-serif;
     background-color: #f1f1f1;
 }
 h1{
     text-align: center;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: powderblue;
+    text-shadow: -2px 0 rgba(0, 0, 0, 0.2), 0 2px rgba(0, 0, 0, 0.2), 2px 0 rgba(0, 0, 0, 0.2), 0 -2px rgba(0, 0, 0, 0.2),1px 1px 6px black;
+    
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+p{
+    font-weight: bolder;
+    font-style: italic;
+}
+span{
+    font-style: normal;
+    font-weight: bolder;
 }
 .container-all {
     max-width: 1200px;
@@ -50,10 +61,81 @@ h1{
     clear: both;
 }
 
+
+/* PAW */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left:53%;
+    top: 20px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 45px;
+    left: -25px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+  }
+ 
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+.container-paws {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin: 1px solid black;
+   
+}
+.reflejo {
+    transform: scaleY(-1);
+    top: 90%;
+    margin-top: -10px;
+    width:100%;
+    display:block;
+    /* margin:auto; */
+    text-align:center;
+    -webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(2%, transparent), to(rgba(255, 255, 255, 1)));
+}
+.reflejo img{
+    overflow: visible;
+}
+img .paw{
+    margin: 0;
+    margin-top: 30px;
+}
+.paw{
+    margin-left: -1.5px;
+}
+
+
 @media only screen and (max-width: 900px) {
     .container {
       width: 48%;
-      /* margin: 6px 0; */
     }
   }
   
